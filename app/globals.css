@@ -37,6 +37,8 @@ p{
   }
 
   button {
-    @apply shadow-lg shadow-[#3C3C3C] rounded-xl font-mono bg-gradient-to-r from-[#cbc2b8] to-[#aea397] text-white
+    @apply text-[#3C3C3C] shadow-lg shadow-[#3C3C3C] rounded-xl font-mono bg-gradient-to-r from-[#cbc2b8] to-[#aea397]
   }
 }
+
+

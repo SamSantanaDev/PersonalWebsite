@@ -12,7 +12,7 @@ import hh3 from "/public/assets/projects/hh_3.png";
 
 const foodappPage = () => {
   return (
-    <div className="w-full  bg-[#d8d8d8]">
+    <div className="w-full  bg-gradient-to-b  from-[#CBC2B8] via-[#D8D8D8] to-[#CBC2B8]">
       <Navbar />
       <div className="w-screen  h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10 " />
@@ -24,11 +24,11 @@ const foodappPage = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Mobile Food Ordering App</h2>
+          <h2 className="py-2">Hungry Hands - Mobile Food Ordering App</h2>
           <h3>Flutter / Firebase</h3>
         </div>
       </div>
-      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 bg-[#d8d8d8]">
+      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 ">
         <div className="col-span-4">
           <p>Project</p>
           <h2>Overview</h2>
@@ -56,8 +56,8 @@ const foodappPage = () => {
               className="rounded-xl hover:scale-105 ease-in duration-300 float-left mr-4"
               src={hh1}
               alt=""
-              width="250"
-              height="250"
+              width="300"
+              height="300"
             />
           <p className="p-4">
             For restaurants, the app provides a dashboard that allows them to
@@ -115,6 +115,13 @@ const foodappPage = () => {
             development to enable the app's deployment on multiple platforms,
             including iOS, Android, and websites.
           </p>
+          <Image
+              className="rounded-xl hover:scale-105 ease-in duration-300 float-left mr-4"
+              src={hh2}
+              alt=""
+              width="250"
+              height="250"
+            />
           <p className="p-4">
             The chosen database solution was Firebase Database, a real-time
             cloud-hosted database provided by Google. Firebase Database offers
@@ -128,7 +135,7 @@ const foodappPage = () => {
           </p>
           </div>
           <div class="clear-both"></div> 
-          <div className="outline">
+          <div >
           <a
             href="https://www.youtube.com/watch?v=wcgHYngrexM"
             target="_blank"
@@ -137,8 +144,14 @@ const foodappPage = () => {
             <button className="px-8 py-2 mt-4 mr-8">Video Demo</button>
           </a>
 
-          <button className="px-8 py-2 mt-4">Code</button>
-          <button className="px-8 py-2 mt-4">Return </button>
+          <a
+            href="https://github.com/SamSantanaDev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          </a>
+          
           </div>
         </div>
         <div className="col-span-4 h-80 md:col-span-1 shadow-lg shadow-[#3C3C3C] rounded-xl p-4">
@@ -165,13 +178,7 @@ const foodappPage = () => {
               </p>
             </div>
           </div>
-          <Image
-              className="rounded-xl hover:scale-105 ease-in duration-300 float-left mr-4"
-              src={hh2}
-              alt=""
-              width="250"
-              height="250"
-            />
+          
         </div>
         <Link href="/#projects">
           <p className="underline cursor-pointer">Back</p>

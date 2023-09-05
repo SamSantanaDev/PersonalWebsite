@@ -100,7 +100,7 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               <Image
-                src="/../public/logo_black.png"
+                src={logo}
                 alt="/"
                 width="87"
                 height="35"

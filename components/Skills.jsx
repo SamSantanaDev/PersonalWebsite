@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="bg-[#D8D8D8] w-full lg:h-screen p-2 outline-dashed"
+      className="bg-gradient-to-b  from-[#D8D8D8] via-[#CBC2B8] to-[#D8D8D8] w-full lg:h-screen p-2 "
     >
       <div className="max-w-[1240px] mx-auto flex flex-col items-center justify-center h-full">
         <p className="text-xl tracking-widest font-mono text-[#868079]">
