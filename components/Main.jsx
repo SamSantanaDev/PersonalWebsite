@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import pfppic from "/public/assets/pfpsam2.png";
-//added correct pfp
+//added correct pfp pi
 const Main = () => {
   return (
     <div
