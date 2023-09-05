@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import aboutpic1 from "/public/assets/sdps1.png";
+import aboutpic2 from "/public/assets/sdps2.jpg";
 
 const About = () => {
   return (
@@ -57,10 +59,10 @@ const About = () => {
         </div>
 
         <div className="w-full h-auto m-auto flex flex-col items-center justify-center p-4  ">
-          <div className="py-3 hover:scale-105 ease-in duration-300">
+          <div className="py-3  hover:scale-105 ease-in duration-300">
             <Image
               className="rounded-xl"
-              src="/../public/assets/sdps2.jpg"
+              src={aboutpic1}
               alt=""
               width="600"
               height="600"
@@ -69,7 +71,7 @@ const About = () => {
           <div className="py-3 hover:scale-105 ease-in duration-300">
             <Image
               className="rounded-xl"
-              src="/../public/assets/sdps1.png"
+              src={aboutpic2}
               alt=""
               width="600"
               height="600"

@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {HiOutlineChevronDoubleUp} from "react-icons/hi";
 import Link from "next/link";
 import Image from "next/image";
+import pfppic from "/public/assets/pfpsam2.png";
 
 function Contact() {
   return (
@@ -20,7 +21,7 @@ function Contact() {
             <div className="lg:p-4 h-full">
               <div className="hover:scale-105 ease-in duration-300">
               <Image
-            src="/../public/assets/pfpsam2.png"
+            src={pfppic}
             alt="/"
             width={400}
             height={400}

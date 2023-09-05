@@ -5,6 +5,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
+import pfppic from "/public/assets/pfpsam2.png";
+
 const Main = () => {
   return (
     <div
@@ -21,7 +23,7 @@ const Main = () => {
         </div>
         <div className=" w-full sm:w-1/2 flex items-center justify-center hover:scale-105 ease-in duration-300">
           <Image
-            src="/../public/assets/pfpsam2.png"
+            src={pfppic}
             alt="/"
             width={400}
             height={400}

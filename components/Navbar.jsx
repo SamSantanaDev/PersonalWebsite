@@ -11,6 +11,7 @@ import {
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/navigation";
+import logo from "/public/logo_black.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -49,7 +50,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
         <Link href="/#home">
           <Image
-            src="/../public/logo_black.png"
+            src={logo}
             alt="/"
             width="100"
             height="50"

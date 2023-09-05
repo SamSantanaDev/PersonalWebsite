@@ -6,6 +6,10 @@ import Link from "next/link";
 import hungryhands_2 from "/public/assets/projects/hungryhands_2.jpeg";
 import { RiRadioButtonFill } from "react-icons/ri";
 
+import hh1 from "/public/assets/projects/hh_1.png";
+import hh2 from "/public/assets/projects/hh_2.png";
+import hh3 from "/public/assets/projects/hh_3.png";
+
 const foodappPage = () => {
   return (
     <div className="w-full  bg-[#d8d8d8]">
@@ -50,7 +54,7 @@ const foodappPage = () => {
           
           <Image
               className="rounded-xl hover:scale-105 ease-in duration-300 float-left mr-4"
-              src="/../public/assets/projects/hh_1.png"
+              src={hh1}
               alt=""
               width="250"
               height="250"
@@ -82,7 +86,7 @@ const foodappPage = () => {
           </p>
           <Image
               className="rounded-xl hover:scale-105 ease-in duration-300 float-right mr-4"
-              src="/../public/assets/projects/hh_3.png"
+              src={hh3}
               alt=""
               width="250"
               height="250"
@@ -163,7 +167,7 @@ const foodappPage = () => {
           </div>
           <Image
               className="rounded-xl hover:scale-105 ease-in duration-300 float-left mr-4"
-              src="/../public/assets/projects/hh_2.png"
+              src={hh2}
               alt=""
               width="250"
               height="250"
