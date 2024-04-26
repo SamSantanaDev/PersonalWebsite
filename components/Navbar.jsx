@@ -16,24 +16,24 @@ import logo from "/public/logo_black.png";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('transparent'); // Start with transparent background
-  const [linkColor, setLinkColor] = useState('#black');
+  const [navBg, setNavBg] = useState("transparent"); // Start with transparent background
+  const [linkColor, setLinkColor] = useState("#black");
   const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
-        setNavBg('#CBC2B8'); // Change background color when scrolled down
+        setNavBg("#CBC2B8"); // Change background color when scrolled down
       } else {
         setShadow(false);
-        setNavBg('transparent'); // Reset background color when at the top
+        setNavBg("transparent"); // Reset background color when at the top
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -41,32 +41,39 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-
   return (
     <div
-      style={{ backgroundColor: navBg,  transition: 'background-color 0.7s ease',}}
-      className={shadow ? 'fixed w-full h-50 shadow-xl z-[100]' : 'fixed w-full h-50 z-[100]'}
+      style={{
+        backgroundColor: navBg,
+        transition: "background-color 0.7s ease",
+      }}
+      className={
+        shadow
+          ? "fixed w-full h-50 shadow-xl z-[100]"
+          : "fixed w-full h-50 z-[100]"
+      }
     >
       <div className="flex justify-between items-center w-full h-full px-10 2xl:px-16">
         <Link href="/#home">
-          <Image
-            src={logo}
-            alt="/"
-            width="100"
-            height="50"
-          />
+          <Image src={logo} alt="/" width="100" height="50" />
         </Link>
 
         <div className="">
           <ul style={{ color: "#D8D8D8" }} className="hidden md:flex">
             <Link href="/#home">
-              <li className="ml-10 text-sm uppercase hover:border-b  font-mono text-black">HOME</li>
+              <li className="ml-10 text-sm uppercase hover:border-b  font-mono text-black">
+                HOME
+              </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-black ">ABOUT</li>
+              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-black ">
+                ABOUT
+              </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-black">SKILLS</li>
+              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-black">
+                SKILLS
+              </li>
             </Link>
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b font-mono text-black">
@@ -80,7 +87,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu size={25} color='#AEA397' />
+            <AiOutlineMenu size={25} color="#AEA397" />
           </div>
         </div>
       </div>
@@ -89,7 +96,7 @@ const Navbar = () => {
           nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }
       >
-         {/* Side menu for mobile */}
+        {/* Side menu for mobile */}
         <div
           className={
             nav
@@ -99,50 +106,60 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image
-                src={logo}
-                alt="/"
-                width="87"
-                height="35"
-              />
+              <Image src={logo} alt="/" width="87" height="35" />
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-[#3C3C3C] p-3 cursor-pointer"
               >
-                <AiOutlineClose color="black"/>
+                <AiOutlineClose color="black" />
               </div>
             </div>
             <div className=" border-b border-[#AEA397] my-4">
-              <p className="w-[85%] md:w-[95%] py-4 font-mono text-black" >
+              <p className="w-[85%] md:w-[95%] py-4 font-mono text-black">
                 Lets build something awesome!
               </p>
             </div>
           </div>
-         
+
           <div className="py-4 flex-col ">
             <ul>
               <Link href="/#home">
-                <li onClick={() => setNav(false)} className="py-4 text-sm font-mono  text-black">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-mono  text-black"
+                >
                   HOME
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm font-mono text-black">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-mono text-black"
+                >
                   ABOUT
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm font-mono text-black">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-mono text-black"
+                >
                   SKILLS
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm font-mono text-black">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-mono text-black"
+                >
                   PROJECTS
                 </li>
               </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm font-mono text-black">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-mono text-black"
+                >
                   CONTACT
                 </li>
               </Link>
@@ -153,16 +170,19 @@ const Navbar = () => {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-[#3C3C3C] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn color="black"/>
+                  <a href="https://www.linkedin.com/in/samuel-santana-08209122b/" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedinIn color="black" />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-[#3C3C3C] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub color="black" />
+                  <a href="https://github.com/SamSantanaDev" target="_blank" rel="noopener noreferrer">
+                    <FaGithub color="black" />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-[#3C3C3C] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail color="black"/>
-                </div>
-                <div className="rounded-full shadow-lg shadow-[#3C3C3C] p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill color="black"/>
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <AiOutlineMail color="black" />
+                  </a>
                 </div>
               </div>
             </div>
