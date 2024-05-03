@@ -34,7 +34,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="pb-20 items-center justify-center bg-gradient-to-b from-[#D8D8D8] to-[#CBC2B8] w-full lg: h-screen "
+      className="pb-20 items-center justify-center bg-gradient-to-b from-[#2F575D] to-black w-full lg: h-screen "
     >
       <div className=" flex flex-col max-w-[1240px] items-center justify-center m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest font-mono  text-[#868079]">

@@ -3,52 +3,58 @@ import Link from "next/link";
 import Image from "next/image";
 import aboutpic1 from "/public/assets/sdps1.png";
 import aboutpic2 from "/public/assets/sdps2.jpg";
+import msg1 from "/public/assets/msg1.jpg";
+import msg2 from "/public/assets/msg2.jpg";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="w-full  md:h-screen p-10 flex items-center justify-center py-1 bg-gradient-to-b from-[#CBC2B8] to-[#D8D8D8] lg:py-20"
+      className="w-full  md:h-screen p-5 flex items-center justify-center py-1 bg-black lg:py-5"
     >
-      <div className="max-w-[1240px] flex flex-col md:flex-row items-center justify-center m-auto md:grid grid-cols-3 gap-8">
-        <div className="md:col-span-2 p-2 justify-center rounded-xl">
-          <p className="py-2 text-black font-mono">
-            Hello, and welcome to my portfolio website! My name is Sam Santana
-            and I am a senior Computer Science student at CSUN. I am eagerly
-            anticipating my graduation in the fall of 2023. With a strong desire
-            to grow and expand my skills in the technology industry, I am
-            constantly seeking new challenges and opportunities to enhance my
-            knowledge.
+      {/* MAIN CONTAINER */}
+      <div className=" outline-double max-w-[1340px] flex flex-col md:flex-row items-start justify-center m-auto md:grid grid-cols-3 gap-8">
+        {/* TEXT CONTAINER */}
+        <div className="outline-dashed md:col-span-2 p-2  justify-between rounded-xl">
+          <p className="py-2 text-white font-mono">
+            Hello, and welcome to my portfolio website! My name is Sam Santana,
+            a recent Computer Science graduate from CSUN and a burgeoning
+            professional in the fields of Software Quality Assurance and web and
+            mobile development.
           </p>
-          <p className="py-2 text-black font-mono">
-            Passion is what drives my work, and I am particularly drawn to
-            projects that allow me to explore my creativity, solve complex
-            problems, and collaborate with others. I firmly believe that the
-            best results are achieved through teamwork and leveraging diverse
-            perspectives. As an individual who thrives in collaborative
-            environments, I am always excited to work with like-minded
-            professionals who share my passion for pushing the boundaries of
-            what is possible.
+          <p className="py-2 text-white font-mono">
+            Since completing my degree, I have embarked on an exciting career
+            path with Sphere Entertainment Co. & Madison Square Garden
+            Entertainment Corp., where I serve as a Quality Assurance Engineer.
+            In this role, I am responsible for managing and executing the Agile
+            Software Testing Life Cycle across multiple platforms including Web,
+            VR, and NativeOS apps. My work ensures that all products not only
+            meet but exceed the rigorous standards expected in today’s
+            competitive tech landscape.
           </p>
-          <p className="py-2 text-black font-mono">
-            My specialization and passion lie in front-end software development,
-            with a solid background in web and mobile development. I find great
-            joy in crafting intuitive user interfaces and creating seamless
-            experiences that delight users. Through my experiences and ongoing
-            learning, I have gained expertise in HTML, CSS, JavaScript, and
-            various frameworks.
+          <p className="py-2 text-white font-mono">
+            My technical foundation is deeply rooted in web and mobile
+            development, with extensive experience in crafting user-centric
+            interfaces using HTML, CSS, JavaScript, and various frameworks. This
+            blend of development and rigorous QA testing allows me to ensure
+            that end products are not only functional but also intuitive and
+            engaging.
           </p>
-          <p className="py-2 text-black font-mono">
-            In addition to my technical pursuits, I have a keen interest in
-            staying up-to-date with the latest advancements in technology. The
-            ever-evolving nature of the industry fascinates me, and I actively
-            seek opportunities to expand my knowledge and skills.
+          <p className="py-2 text-white font-mono">
+            II am driven by a passion for technology and a commitment to
+            excellence. My approach involves continuous learning and applying
+            innovative solutions to complex technical challenges. I believe that
+            the most impactful software products emerge from a collaborative
+            process, leveraging diverse skills and perspectives to achieve
+            superior results.
           </p>
 
-          <p className="py-2 text-black font-mono">
-            I invite you to explore my work, get to know me better, and reach
-            out if you would like to collaborate or discuss exciting projects.
-            Let's create something amazing together!
+          <p className="py-2 text-white font-mono">
+            Please feel free to explore my projects and learn about my
+            experiences. If you're interested in discussing potential
+            collaborations or have exciting projects in mind, don't hesitate to
+            reach out. Let’s work together to create exceptional digital
+            experiences that push technological boundaries and delight users!
           </p>
           <p className="py-2 text-white"></p>
           <Link href="/#projects">
@@ -57,12 +63,21 @@ const About = () => {
             </p>
           </Link>
         </div>
-
-        <div className="w-full h-auto m-auto flex flex-col items-center justify-center p-4  ">
-          <div className="py-3  hover:scale-105 ease-in duration-300">
+        {/* PHOTO CONTAINER */}
+        <div className=" outline-dotted w-full h-auto m-auto flex flex-col items-center justify-center p-4  ">
+          {/* <div className="py-3 hover:scale-105 ease-in duration-300">
             <Image
               className="rounded-xl"
               src={aboutpic1}
+              alt=""
+              width="600"
+              height="600"
+            />
+          </div> */}
+          <div className="py-3 hover:scale-105 ease-in duration-300">
+            <Image
+              className="rounded-xl"
+              src={aboutpic2}
               alt=""
               width="600"
               height="600"
@@ -71,7 +86,16 @@ const About = () => {
           <div className="py-3 hover:scale-105 ease-in duration-300">
             <Image
               className="rounded-xl"
-              src={aboutpic2}
+              src={msg1}
+              alt=""
+              width="600"
+              height="600"
+            />
+          </div>
+          <div className="py-3 hover:scale-105 ease-in duration-300">
+            <Image
+              className="rounded-xl"
+              src={msg2}
               alt=""
               width="600"
               height="600"

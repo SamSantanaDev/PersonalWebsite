@@ -12,7 +12,7 @@ import hh3 from "/public/assets/projects/hh_3.png";
 
 const foodappPage = () => {
   return (
-    <div className="w-full  bg-gradient-to-b  from-[#CBC2B8] via-[#D8D8D8] to-[#CBC2B8]">
+    <div className="w-full  bg-gradient-to-b  from-[#99AEAD] via-[#D8D8D8] to-[#99AEAD]">
       <Navbar />
       <div className="w-screen  h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10 " />

@@ -24,7 +24,7 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
-        setNavBg('#CBC2B8'); // Change background color when scrolled down
+        setNavBg('#99AEAD'); // Change background color when scrolled down
       } else {
         setShadow(false);
         setNavBg('transparent'); // Reset background color when at the top
@@ -54,33 +54,34 @@ const Navbar = () => {
             alt="/"
             width="100"
             height="50"
+            
           />
         </Link>
 
         <div className="">
-          <ul style={{ color: "#D8D8D8" }} className="hidden md:flex">
+          <ul style={{ color: "#2F575D"}} className="hidden md:flex">
             <Link href="/#home">
-              <li className="ml-10 text-sm uppercase hover:border-b  font-mono text-black">HOME</li>
+              <li className="ml-10 text-sm uppercase hover:border-b  font-mono text-white">HOME</li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-black ">ABOUT</li>
+              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-white ">ABOUT</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-black">SKILLS</li>
+              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-white">SKILLS</li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-black">
+              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-white">
                 PROJECTS
               </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-black">
+              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-white">
                 CONTACT
               </li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
-            <AiOutlineMenu size={25} color='#AEA397' />
+            <AiOutlineMenu size={25} color='#99AEAD' />
           </div>
         </div>
       </div>
@@ -93,7 +94,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#CBC2B8] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#99AEAD] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -112,7 +113,7 @@ const Navbar = () => {
                 <AiOutlineClose color="black"/>
               </div>
             </div>
-            <div className=" border-b border-[#AEA397] my-4">
+            <div className=" border-b border-[#99AEAD] my-4">
               <p className="w-[85%] md:w-[95%] py-4 font-mono text-black" >
                 Lets build something awesome!
               </p>
