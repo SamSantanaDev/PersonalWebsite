@@ -13,19 +13,20 @@ const About = () => {
       className="w-full  md:h-screen p-5 flex items-center justify-center py-1 bg-black lg:py-5"
     >
       {/* MAIN CONTAINER */}
-      <div className=" outline-double max-w-[1340px] flex flex-col md:flex-row items-start justify-center m-auto md:grid grid-cols-3 gap-8">
+      <div className="max-w-[1340px] flex flex-col md:flex-row items-start justify-center m-auto md:grid grid-cols-3 gap-8">
         {/* TEXT CONTAINER */}
-        <div className="outline-dashed md:col-span-2 p-2  justify-between rounded-xl">
+        <div className=" md:col-span-2 p-2  justify-between rounded-xl">
+          <h1>Hello! <br></br> My name is Sam Santana,</h1>
           <p className="py-2 text-white font-mono">
-            Hello, and welcome to my portfolio website! My name is Sam Santana,
+            
             a recent Computer Science graduate from CSUN and a burgeoning
             professional in the fields of Software Quality Assurance and web and
             mobile development.
           </p>
           <p className="py-2 text-white font-mono">
             Since completing my degree, I have embarked on an exciting career
-            path with Sphere Entertainment Co. & Madison Square Garden
-            Entertainment Corp., where I serve as a Quality Assurance Engineer.
+            path with The Sphere & Madison Square Garden
+            Entertainment Corp, where I serve as a Quality Assurance Engineer.
             In this role, I am responsible for managing and executing the Agile
             Software Testing Life Cycle across multiple platforms including Web,
             VR, and NativeOS apps. My work ensures that all products not only
@@ -41,7 +42,7 @@ const About = () => {
             engaging.
           </p>
           <p className="py-2 text-white font-mono">
-            II am driven by a passion for technology and a commitment to
+            I am driven by a passion for technology and a commitment to
             excellence. My approach involves continuous learning and applying
             innovative solutions to complex technical challenges. I believe that
             the most impactful software products emerge from a collaborative
@@ -56,10 +57,10 @@ const About = () => {
             reach out. Let’s work together to create exceptional digital
             experiences that push technological boundaries and delight users!
           </p>
-          <p className="py-2 text-white"></p>
+        
           <Link href="/#projects">
-            <p className="py-2 text-[#D8D8D8]  font-mono cursor-pointer">
-              Check out some of my lastest projescts
+            <p className="py-2 text-[#2F575D]  font-mono cursor-pointer hover:shadow-md shadow-[#2F575D]">
+              Check out some of my lastest projects
             </p>
           </Link>
         </div>
