@@ -27,7 +27,7 @@ const Projects = () => {
           title="Hungry Hands Restaurant Dashboard"
           backgroundImg={restaurant_1}
           projectTech="Flutter | Firebase"
-          projectUrl="/restaurantapp"
+          projectUrl="/"
         />
         {/* Add more ProjectItem components as needed */}
       </div>
