@@ -40,7 +40,7 @@ const Main = () => {
             </h2>
           </div>
            {/* Social Links*/}
-           <div className="flex flex-row items-center justify-evenly my-4 lg:flex-row bg-white sm:bg-black">
+           <div className="flex flex-row items-center justify-evenly my-4 lg:flex-row x">
 
           <div className="rounded-xl shadow-lg  shadow-[#2F575D] p-4 cursor-pointer hover:scale-150 ease-in duration-300">
             <a

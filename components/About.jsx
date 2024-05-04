@@ -17,23 +17,23 @@ const About = () => {
         {/* TEXT CONTAINER */}
         <div className=" md:col-span-2 p-2  justify-between rounded-xl">
           <h1>Hello! <br></br> My name is Sam Santana,</h1>
-          <p className="py-2 text-white font-mono">
+          <p className="py-2 text-[#99AEAD] font-mono">
             
             a recent Computer Science graduate from CSUN and a burgeoning
-            professional in the fields of Software Quality Assurance and web and
-            mobile development.
+            professional in the fields of <span className="text-white font-bold">Software Quality Assurance, Web Development, and
+            Mobile Applications.</span>
           </p>
-          <p className="py-2 text-white font-mono">
+          <p className="py-2 text-[#99AEAD] font-mono">
             Since completing my degree, I have embarked on an exciting career
-            path with The Sphere & Madison Square Garden
-            Entertainment Corp, where I serve as a Quality Assurance Engineer.
+            path with <span className="text-white font-bold"> The Sphere & Madison Square Garden
+            Entertainment Corp</span>, where I serve as a Quality Assurance Engineer.
             In this role, I am responsible for managing and executing the Agile
             Software Testing Life Cycle across multiple platforms including Web,
             VR, and NativeOS apps. My work ensures that all products not only
             meet but exceed the rigorous standards expected in today’s
             competitive tech landscape.
           </p>
-          <p className="py-2 text-white font-mono">
+          <p className="py-2 text-[#99AEAD] font-mono">
             My technical foundation is deeply rooted in web and mobile
             development, with extensive experience in crafting user-centric
             interfaces using HTML, CSS, JavaScript, and various frameworks. This
@@ -41,7 +41,7 @@ const About = () => {
             that end products are not only functional but also intuitive and
             engaging.
           </p>
-          <p className="py-2 text-white font-mono">
+          <p className="py-2 text-[#99AEAD] font-mono">
             I am driven by a passion for technology and a commitment to
             excellence. My approach involves continuous learning and applying
             innovative solutions to complex technical challenges. I believe that
@@ -50,7 +50,7 @@ const About = () => {
             superior results.
           </p>
 
-          <p className="py-2 text-white font-mono">
+          <p className="py-2 text-[#99AEAD] font-mono">
             Please feel free to explore my projects and learn about my
             experiences. If you're interested in discussing potential
             collaborations or have exciting projects in mind, don't hesitate to
@@ -59,13 +59,13 @@ const About = () => {
           </p>
         
           <Link href="/#projects">
-            <p className="py-2 text-[#2F575D]  font-mono cursor-pointer hover:shadow-md shadow-[#2F575D]">
-              Check out some of my lastest projects
+            <p className="py-2 my-5 text-[#2F575D]  font-mono cursor-pointer ">
+              <span className="p-4 rounded-xl hover:shadow-xl hover:shadow-[#2F575D] border-solid border-2 border-transparent hover:border-[#2F575D]">Check out some of my lastest projects</span>
             </p>
           </Link>
         </div>
         {/* PHOTO CONTAINER */}
-        <div className=" outline-dotted w-full h-auto m-auto flex flex-col items-center justify-center p-4  ">
+        <div className=" w-full h-auto m-auto flex flex-col items-center justify-center p-4  ">
           {/* <div className="py-3 hover:scale-105 ease-in duration-300">
             <Image
               className="rounded-xl"
@@ -77,7 +77,7 @@ const About = () => {
           </div> */}
           <div className="py-3 hover:scale-105 ease-in duration-300">
             <Image
-              className="rounded-xl"
+              className="rounded-xl shadow-xl shadow-[#2F575D] border-solid border-2 border-[#2F575D] "
               src={aboutpic2}
               alt=""
               width="600"
@@ -86,14 +86,14 @@ const About = () => {
           </div>
           <div className="py-3 hover:scale-105 ease-in duration-300">
             <Image
-              className="rounded-xl"
+              className="rounded-xl shadow-xl shadow-[#2F575D] border-solid border-2 border-[#2F575D] "
               src={msg1}
               alt=""
               width="600"
               height="600"
             />
           </div>
-          <div className="py-3 hover:scale-105 ease-in duration-300">
+          {/* <div className="py-3 hover:scale-105 ease-in duration-300">
             <Image
               className="rounded-xl"
               src={msg2}
@@ -101,7 +101,7 @@ const About = () => {
               width="600"
               height="600"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

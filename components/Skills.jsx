@@ -32,7 +32,7 @@ const Skills = () => {
       id="skills"
       className="bg-gradient-to-b from-black to-[#2F575D] w-full min-h-screen p-4 flex flex-col items-center justify-center"
     >
-      <div className=" items-center justify-center w-full px-4">
+      <div className=" items-center justify-center w-full px-4 md:my-40px lg:my-40px">
         <div className="text-center mb-10  w-full">
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">
             Skills
