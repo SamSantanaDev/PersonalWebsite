@@ -62,16 +62,14 @@ const Main = () => {
           </div>
           <div className="rounded-xl shadow-lg shadow-[#2F575D] p-4 cursor-pointer hover:scale-150 ease-in duration-300">
             <a
-              href="https://www.youtube.com/watch?v=wcgHYngrexM"
-              target="_blank"
+              href="/#contact"
+              
               rel="noopener noreferrer"
             >
               <AiOutlineMail color="teal" size={"30px"}  />
             </a>
           </div>
-          <div className="rounded-xl shadow-lg shadow-[#2F575D] p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-            <BsFillPersonLinesFill color="teal" size={"30px"}  />
-          </div>
+          
         </div>
       
         </div>

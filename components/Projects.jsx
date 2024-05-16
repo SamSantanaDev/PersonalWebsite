@@ -12,7 +12,9 @@ const Projects = () => {
   return (
     <div id="projects" className="w-full mx-auto px-4 md:px-20 py-2 bg-gradient-to-b to-black from-[#2F575D] lg:py-20">
       <div className="flex flex-col items-center">
-      <p className="text-xl tracking-widest font-mono text-[#868079]">Projects</p>
+      <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">
+            Projects
+          </h1>
      
       </div>
       

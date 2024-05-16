@@ -14,10 +14,11 @@ import { useRouter } from "next/navigation";
 import logo from "/public/logo_black.png";
 
 const Navbar = () => {
+
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('transparent'); // Start with transparent background
-  const [linkColor, setLinkColor] = useState('#black');
+  const [navBg, setNavBg] = useState('transparent'); 
+  const [linkColor, setLinkColor] = useState('white');
   const router = useRouter();
 
   useEffect(() => {
@@ -25,9 +26,13 @@ const Navbar = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
         setNavBg('#99AEAD'); // Change background color when scrolled down
+        //set text color to black
+        setLinkColor('black');
+        
       } else {
         setShadow(false);
         setNavBg('transparent'); // Reset background color when at the top
+        setLinkColor('white');
       }
     };
 
@@ -61,21 +66,26 @@ const Navbar = () => {
         <div className="">
           <ul style={{ color: "#2F575D"}} className="hidden md:flex">
             <Link href="/#home">
-              <li className="ml-10 text-sm uppercase hover:border-b  font-mono text-white">HOME</li>
+              <li style={{color: linkColor} }
+               className="ml-10 text-sm uppercase hover:border-b  font-mono">HOME</li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-white ">ABOUT</li>
+              <li style={{color: linkColor} } 
+              className="ml-10 text-sm uppercase hover:border-b font-mono text-white ">ABOUT</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-white">SKILLS</li>
+              <li style={{color: linkColor} } 
+              className="ml-10 text-sm uppercase hover:border-b font-mono text-white">SKILLS</li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-white">
+              <li style={{color: linkColor} }
+              className="ml-10 text-sm uppercase hover:border-b font-mono text-white">
                 PROJECTS
               </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b font-mono text-white">
+              <li style={{color: linkColor} }
+              className="ml-10 text-sm uppercase hover:border-b font-mono text-white">
                 CONTACT
               </li>
             </Link>

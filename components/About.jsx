@@ -16,22 +16,29 @@ const About = () => {
       <div className="max-w-[1340px] flex flex-col md:flex-row items-start justify-center m-auto md:grid grid-cols-3 gap-8">
         {/* TEXT CONTAINER */}
         <div className=" md:col-span-2 p-2  justify-between rounded-xl">
-          <h1>Hello! <br></br> My name is Sam Santana,</h1>
+          <h1>
+            Hello! <br></br> My name is Sam Santana,
+          </h1>
           <p className="py-2 text-[#99AEAD] font-mono">
-            
             a recent Computer Science graduate from CSUN and a burgeoning
-            professional in the fields of <span className="text-white font-bold">Software Quality Assurance, Web Development, and
-            Mobile Applications.</span>
+            professional in the fields of{" "}
+            <span className="text-white font-bold">
+              Software Quality Assurance, Web Development, and Mobile
+              Applications.
+            </span>
           </p>
           <p className="py-2 text-[#99AEAD] font-mono">
             Since completing my degree, I have embarked on an exciting career
-            path with <span className="text-white font-bold"> The Sphere & Madison Square Garden
-            Entertainment Corp</span>, where I serve as a Quality Assurance Engineer.
-            In this role, I am responsible for managing and executing the Agile
-            Software Testing Life Cycle across multiple platforms including Web,
-            VR, and NativeOS apps. My work ensures that all products not only
-            meet but exceed the rigorous standards expected in today’s
-            competitive tech landscape.
+            path with{" "}
+            <span className="text-white font-bold">
+              {" "}
+              The Sphere & Madison Square Garden Entertainment Corp
+            </span>
+            , where I serve as a Quality Assurance Engineer. In this role, I am
+            responsible for managing and executing the Agile Software Testing
+            Life Cycle across multiple platforms including Web, VR, and NativeOS
+            apps. My work ensures that all products not only meet but exceed the
+            rigorous standards expected in today’s competitive tech landscape.
           </p>
           <p className="py-2 text-[#99AEAD] font-mono">
             My technical foundation is deeply rooted in web and mobile
@@ -57,10 +64,12 @@ const About = () => {
             reach out. Let’s work together to create exceptional digital
             experiences that push technological boundaries and delight users!
           </p>
-        
+
           <Link href="/#projects">
             <p className="py-2 my-5 text-[#2F575D]  font-mono cursor-pointer ">
-              <span className="p-4 rounded-xl hover:shadow-xl hover:shadow-[#2F575D] border-solid border-2 border-transparent hover:border-[#2F575D]">Check out some of my lastest projects</span>
+              <span className="text-[#2F575D] p-4 rounded-xl shadow-xl shadow-[#2F575D] border-solid border-2  border-b-[#2F575D] border-transparent hover:bg-[#2F575D] hover:text-black hover:scale-50 ">
+                Check out some of my lastest projects
+              </span>
             </p>
           </Link>
         </div>
