@@ -68,7 +68,7 @@ const About = () => {
           <Link href="/#projects">
             <p className="py-2 my-5 text-[#2F575D]  font-mono cursor-pointer ">
               <span className="text-[#2F575D] p-4 rounded-xl shadow-xl shadow-[#2F575D] border-solid border-2  border-b-[#2F575D] border-transparent hover:bg-[#2F575D] hover:text-black hover:scale-50 ">
-                Check out some of my lastest projects
+                See my lastest projects
               </span>
             </p>
           </Link>
