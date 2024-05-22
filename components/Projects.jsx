@@ -29,7 +29,7 @@ const Projects = () => {
           title="Hungry Hands Restaurant Dashboard"
           backgroundImg={restaurant_1}
           projectTech="Flutter | Firebase"
-          projectUrl="/"
+          projectUrl="/restaurantapp"
         />
         {/* Add more ProjectItem components as needed */}
         <ProjectItem
@@ -42,7 +42,7 @@ const Projects = () => {
           title="Sphere VR  Product Development"
           backgroundImg={restaurant_1}
           projectTech="Flutter | Firebase"
-          projectUrl="/"
+          projectUrl="/SphereProject"
         />
       </div>
       

@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full  md:h-screen p-5 flex items-center justify-center py-1 bg-black lg:py-5"
+      className="w-full mb-[90px] md:h-screen p-5 flex items-center justify-center py-1 bg-black lg:py-5"
     >
       {/* MAIN CONTAINER */}
       <div className="max-w-[1340px] flex flex-col md:flex-row items-start justify-center m-auto md:grid grid-cols-3 gap-8">
@@ -67,7 +67,7 @@ const About = () => {
 
           <Link href="/#projects">
             <p className="py-2 my-5 text-[#2F575D]  font-mono cursor-pointer ">
-              <span className="text-[#2F575D] p-4 rounded-xl shadow-xl shadow-[#2F575D] border-solid border-2  border-b-[#2F575D] border-transparent hover:bg-[#2F575D] hover:text-black hover:scale-50 ">
+              <span className="mt-20 text-[#2F575D] bg-black p-4 rounded-xl shadow-xl shadow-[#2F575D] border-solid border-2 border-b-[#2F575D] border-transparent hover:bg-[#2F575D] hover:text-black hover:scale-105 ease-in duration-300">
                 See my lastest projects
               </span>
             </p>
@@ -75,15 +75,7 @@ const About = () => {
         </div>
         {/* PHOTO CONTAINER */}
         <div className=" w-full h-auto m-auto flex flex-col items-center justify-center p-4  ">
-          {/* <div className="py-3 hover:scale-105 ease-in duration-300">
-            <Image
-              className="rounded-xl"
-              src={aboutpic1}
-              alt=""
-              width="600"
-              height="600"
-            />
-          </div> */}
+
           <div className="py-3 hover:scale-105 ease-in duration-300">
             <Image
               className="rounded-xl shadow-xl shadow-[#2F575D] border-solid border-2 border-[#2F575D] "

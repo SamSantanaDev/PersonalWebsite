@@ -16,13 +16,13 @@ const Main = () => {
       {/* Main Container: Photo and Info*/}
       <div className="mx-autojustify-center flex flex-col items-center sm:flex-row px-10">
         {/* Main Photo */}
-        <div className=" w-full sm:w-1/2 flex items-center justify-center hover:scale-105 ease-in duration-300">
+        <div className=" w-full sm:w-1/2 flex items-center justify-center hover:scale-105 ease-in duration-300 ">
           <Image
             src={pfppic}
             alt="/"
             width={400}
             height={400}
-            className="rounded-full shadow-lg  shadow-[#2F575D] border-solid border-2 border-b-[#2F575D] border-transparent"
+            className="rounded-full shadow-xl  shadow-[#2F575D]"
           />
         </div>
         {/* Info */}

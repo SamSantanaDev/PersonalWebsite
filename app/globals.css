@@ -32,6 +32,14 @@ html {
   }
 
   button {
-    @apply text-[#3C3C3C] shadow-lg shadow-[#3C3C3C] rounded-xl font-mono bg-gradient-to-r from-[#99AEAD] to-[#99AEAD];
+    @apply text-[#2F575D] bg-black p-4 rounded-xl shadow-xl shadow-[#2F575D] border-solid border-2 border-b-[#2F575D] border-transparent hover:bg-[#2F575D] hover:text-black hover:scale-105 ease-in duration-300
   }
+}
+
+label{
+  @apply  font-bold font-mono;
+}
+
+input{
+  @apply font-mono;
 }
