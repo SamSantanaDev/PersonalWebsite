@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="w-full h-[150px] outline-double items-center justify-center flex flex-col bg-black">
+    <div className="w-full h-[150px]  items-center justify-center flex flex-col bg-black">
       <div className="flex flex-row items-center justify-center space-x-20 my-4 lg:flex-row x">
         <div className="rounded-xl shadow-lg  shadow-[#2F575D] p-4 cursor-pointer hover:scale-150 ease-in duration-300">
           <a
