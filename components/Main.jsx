@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <div
       id="home"
-      className=" py-40 w-full h-[70vh]text-center bg-gradient-to-b  from-[#2F575D] via-[#000000] to-[#000000]  flex flex-col justify-center items-center"
+      className=" py-40  w-full h-[70vh]text-center bg-gradient-to-b  from-[#2F575D] via-[#000000] to-[#000000]  flex flex-col justify-center items-center"
     >
       {/* Main Container: Photo and Info*/}
       <div className="mx-autojustify-center flex flex-col items-center sm:flex-row px-10">
@@ -39,6 +39,7 @@ const Main = () => {
               Software Engineer
             </h2>
           </div>
+          
            {/* Social Links*/}
            <div className="flex flex-row items-center justify-evenly my-4 lg:flex-row x">
 

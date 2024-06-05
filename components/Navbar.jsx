@@ -73,10 +73,10 @@ const Navbar = () => {
               <li style={{color: linkColor} } 
               className="ml-10 text-sm uppercase hover:border-b font-mono text-white ">ABOUT</li>
             </Link>
-            <Link href="/#skills">
+            {/* <Link href="/#skills">
               <li style={{color: linkColor} } 
               className="ml-10 text-sm uppercase hover:border-b font-mono text-white">SKILLS</li>
-            </Link>
+            </Link> */}
             <Link href="/#projects">
               <li style={{color: linkColor} }
               className="ml-10 text-sm uppercase hover:border-b font-mono text-white">

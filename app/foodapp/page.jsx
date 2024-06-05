@@ -9,6 +9,9 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import hh1 from "/public/assets/projects/hh_1.png";
 import hh2 from "/public/assets/projects/hh_2.png";
 import hh3 from "/public/assets/projects/hh_3.png";
+import hh4 from "/public/assets/projects/hh_4.png";
+import hh5 from "public/assets/projects/hungryhands_1.png";
+
 
 const foodappPage = () => {
   return (
@@ -133,8 +136,27 @@ const foodappPage = () => {
             Android Studio/VS Code, and Firebase Database to create a visually
             appealing, responsive, and efficient food app.
           </p>
+          <div className="m-10 flex flex-col justify-evenly space-y-5">
+          <Image
+              className="rounded-xl hover:scale-105 ease-in duration-300 float-left mr-4"
+              src={hh4}
+              alt=""
+              width="900"
+              height="900"
+            />
+               <Image
+              className="rounded-xl hover:scale-105 ease-in duration-300 float-left mr-4"
+              src={hh5}
+              alt=""
+              width="900"
+              height="900"
+            />
+            </div>
           </div>
-          <div class="clear-both"></div> 
+      
+      
+      
+      {/* link buttons */}
           <div >
           <a
             href="https://www.youtube.com/watch?v=wcgHYngrexM"
@@ -168,7 +190,7 @@ const foodappPage = () => {
                 <RiRadioButtonFill className="pr-1" /> Firebase
               </p>
               <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Google API
+                <RiRadioButtonFill className="pr-1" /> Google Maps API
               </p>
               <p className="py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Google Auth
