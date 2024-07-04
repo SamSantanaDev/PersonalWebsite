@@ -1,13 +1,33 @@
 "use client";
 
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
     const [submit, handleSubmit] = useForm("xyyrvlvr");
-    if (submit.succeeded) {
-      return <p className='text-white font-semibold'>Message Sent</p>;
-    }
+    const [showMessage, setShowMessage] = useState(false);
+
+
+    // if (submit.succeeded) {
+    //   return <p className='text-white font-semibold'>Message Sent</p>;
+    // }
+
+    useEffect(() => {
+      if (submit.succeeded) {
+        setShowMessage(true);
+        console.log("Message was sent");
+        const timer = setTimeout(() => {
+          setShowMessage(false);
+          console.log("confirmation message removed");
+          console.log(showMessage);
+        }, 10000); // 10 seconds
+  
+        return () => clearTimeout(timer);
+      }
+    }, [submit.succeeded]);
+
+
+
 
 
 
@@ -78,6 +98,10 @@ function ContactForm() {
     >
       Submit
     </button>
+
+    {showMessage && (
+          <p className='text-white font-semibold mt-10 mb-4'>Message Sent</p>
+        )}
   </form>
 </div>
   )
