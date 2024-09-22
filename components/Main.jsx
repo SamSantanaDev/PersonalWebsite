@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import pfppic from "/public/assets/pfp2024.png";
-import pfppic2 from "/public/assets/subject.png";
+import pfppic2 from "/public/assets/Subject.png";
 
 
 const Main = () => {
