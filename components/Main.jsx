@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import pfppic from "/public/assets/pfp2024.png";
+import pfppic2 from "/public/assets/subject.png";
+
 
 const Main = () => {
   return (
@@ -18,7 +20,7 @@ const Main = () => {
         {/* Main Photo */}
         <div className=" w-full sm:w-1/2 flex items-center justify-center hover:scale-105 ease-in duration-300 ">
           <Image
-            src={pfppic}
+            src={pfppic2}
             alt="/"
             width={400}
             height={400}
@@ -34,12 +36,18 @@ const Main = () => {
             </h1>
           </div>
 
-          <div className="py-5 w-full">
+          <div className="pt-5 w-full">
             <h2 className="w-full py-4 text-center sm:text-left text-white">
+              Product Manager
+            </h2>
+          </div>
+
+          <div className="py-1 w-full">
+            <h2 className="w-full py-1 text-center sm:text-left text-white">
               Software Engineer
             </h2>
           </div>
-          
+
            {/* Social Links*/}
            <div className="flex flex-row items-center justify-evenly my-4 lg:flex-row x">
 
