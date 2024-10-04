@@ -18,21 +18,21 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('transparent'); 
-  const [linkColor, setLinkColor] = useState('white');
+  const [linkColor, setLinkColor] = useState('black');
   const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
-        setNavBg('#99AEAD'); // Change background color when scrolled down
+        setNavBg('#bbbbbb'); // Change background color when scrolled down
         //set text color to black
         setLinkColor('black');
         
       } else {
         setShadow(false);
         setNavBg('transparent'); // Reset background color when at the top
-        setLinkColor('white');
+        setLinkColor('black');
       }
     };
 
