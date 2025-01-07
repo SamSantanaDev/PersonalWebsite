@@ -38,13 +38,13 @@ const Main = () => {
 
           <div className="pt-5 w-full">
             <h2 className="w-full py-4 text-center sm:text-left text-white">
-              Product Manager
+              Web Developer
             </h2>
           </div>
 
           <div className="py-1 w-full">
             <h2 className="w-full py-1 text-center sm:text-left text-white">
-              Software Engineer
+              
             </h2>
           </div>
 
